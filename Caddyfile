@@ -1,0 +1,4 @@
+0.0.0.0
+root /files
+basicauth / {%USERNAME%} {%PASSWORD%}
+browse

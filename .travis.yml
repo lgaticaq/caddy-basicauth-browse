@@ -1,0 +1,17 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -t lgatica/caddy-basicauth-browse:latest -t lgatica/caddy-basicauth-browse:$VERSION .
+
+script:
+  - docker run --rm lgatica/caddy-basicauth-browse:latest -version
+
+after_success:
+  - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push lgatica/caddy-basicauth-browse:latest
+
+notifications:
+  email: false
