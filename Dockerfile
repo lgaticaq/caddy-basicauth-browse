@@ -1,4 +1,4 @@
-FROM abiosoft/caddy:0.11.0-no-stats@sha256:a364d2b0dd30a4128adb8eb2abf1360d77b32a38a27d5a6e7b0e3ba9e019d617
+FROM abiosoft/caddy:0.11.1-no-stats@sha256:db2c65b8bc24b3b5fa27647e428fe406563f0141ba79f9808fa0e04d4f89baef
 
 ENV USERNAME=admin PASSWORD=admin
 
